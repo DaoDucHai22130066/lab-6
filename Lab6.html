@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giao tiếp người máy</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function changeContent(content) {
-          document.getElementById('dynamic-content').innerText = content;
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -28,92 +23,101 @@
             </div>
         </nav>        
     </header>
+    <main>
+    </main>
     <div class="Home">
-      <div class="isotope-wrapper">
-        <div class="isotope-toolbar">
-          <input type="radio" id="tab1" name="isotope-tabs" checked onchange="showTab('content-tab1')">
-          <label for="tab1"><span>Ex 1 (F-pattern)</span></label>
-    
-          <input type="radio" id="tab2" name="isotope-tabs" onchange="showTab('content-tab2')">
-          <label for="tab2"><span>Ex 2 (Z-pattern)</span></label>
-        </div>
-    
-        <div class="isotope-box">
-          <div id="content-tab1" class="tab-content active">            
-            <div class="button-container"> 
-              <button onclick="showContent('button1')">Design</button>
-              <a href="F-pattern.html" target="_blank"><button>Implement</button></a>
-            </div>
-          </div>
-    
-          <div id="content-tab2" class="tab-content">
-            <div class="button-container">
-              <button onclick="showContent('button2')">Design</button>
-              <a href="Z-pattern.html" target="_blank"><button>Implement</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div class="isotope-wrapper">
+            <div class="isotope-toolbar">
+                <input type="radio" id="tab1" name="isotope-tabs" checked onchange="showTab('content-tab1')">
+                <label for="tab1"><span>Ex 1 (F-pattern)</span></label>
 
-      <div id="content1" class="design">
-        <div class="design-content">
-          <div>
-              <img src="img/z5005724453700_3a86e4828ba25c8e14150a714993a9b9.jpg" alt="">
-              <div class="button-img">
-                <a href="img/z5005724453700_3a86e4828ba25c8e14150a714993a9b9.jpg" class="download-button-img" download>Download</a>
+                <input type="radio" id="tab2" name="isotope-tabs" onchange="showTab('content-tab2')">
+                <label for="tab2"><span>Ex 2 (Z-pattern)</span></label>
             </div>
-          </div>
-          <div>
-              <img src="img/Screenshot 2023-12-24 220456.png" alt="">
-              <div class="button-img">
-                <a href="https://www.figma.com/file/IGq0zTjIjoHk9vQUYkX5Es/Lab6-ex1(F-pattern)?type=design&mode=design&t=va3P2OgviAPST9ES-1" class="download-button-img" target="_blank">Figma Link</a>
-                <a href="img/Screenshot 2023-12-24 220456.png" class="download-button-img" download>Download</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div id="content2" class="design">
-        <div class="design-content">
-          <div>
-              <img src="img/z5005724448980_ae1026b181e71f0a011b558230837dcf.jpg" alt="">
-              <div class="button-img">
-                <a href="img/z5005724448980_ae1026b181e71f0a011b558230837dcf.jpg" class="download-button-img" download>Download</a>
+            <div class="isotope-box">
+                <div id="content-tab1" class="tab-content active">            
+                    <div class="button-container"> 
+                        <button onclick="showContent('content1')">Design</button>
+                        <a href="F-pattern.html" target="_blank"><button>Implement</button></a>
+                    </div>
+                </div>
+
+                <div id="content-tab2" class="tab-content">
+                    <div class="button-container">
+                        <button onclick="showContent('content2')">Design</button>
+                        <a href="Z-pattern.html" target="_blank"><button>Implement</button></a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div>
-              <img src="img/Screenshot 2023-12-24 221510.png" alt="">
-              <div class="button-img">
-                <a href="https://www.figma.com/file/IGq0zTjIjoHk9vQUYkX5Es/Lab6-ex1(F-pattern)?type=design&mode=design&t=va3P2OgviAPST9ES-1" class="download-button-img" target="_blank">Figma Link</a>
-                <a href="img/Screenshot 2023-12-24 221510.png" class="download-button-img" download>Download</a>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div id="content1" class="design">
+            <div class="design-content">
+                <div>
+                    <img src="img/z5005724453700_3a86e4828ba25c8e14150a714993a9b9.jpg" alt="">
+                    <div class="button-img">
+                        <a href="img/z5005724453700_3a86e4828ba25c8e14150a714993a9b9.jpg" class="download-button-img" download>Download</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/Screenshot 2023-12-24 220456.png" alt="">
+                    <div class="button-img">
+                        <a href="https://www.figma.com/file/IGq0zTjIjoHk9vQUYkX5Es/Lab6-ex1(F-pattern)?type=design&mode=design&t=va3P2OgviAPST9ES-1" class="download-button-img" target="_blank">Figma Link</a>
+                        <a href="img/Screenshot 2023-12-24 220456.png" class="download-button-img" download>Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content2" class="design">
+            <div class="design-content">
+                <div>
+                    <img src="img/z5005724448980_ae1026b181e71f0a011b558230837dcf.jpg" alt="">
+                    <div class="button-img">
+                        <a href="img/z5005724448980_ae1026b181e71f0a011b558230837dcf.jpg" class="download-button-img" download>Download</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/Screenshot 2023-12-24 221510.png" alt="">
+                    <div class="button-img">
+                        <a href="https://www.figma.com/file/IGq0zTjIjoHk9vQUYkX5Es/Lab6-ex1(F-pattern)?type=design&mode=design&t=va3P2OgviAPST9ES-1" class="download-button-img" target="_blank">Figma Link</a>
+                        <a href="img/Screenshot 2023-12-24 221510.png" class="download-button-img" download>Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
-  <script>
-    function showTab(tabId) {
-      
-      var tabs = document.querySelectorAll('.tab-content');
-      tabs.forEach(function(tab) {
-        tab.classList.remove('active');
-      });
 
-      var selectedTab = document.getElementById(tabId);
-      if (selectedTab) {
-        selectedTab.classList.add('active');
-      }
-    }
+    <script>
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active');
+            });
 
-    function showContent(buttonId) {
-    
-    document.querySelectorAll('.content').forEach(function(content) {
-      content.style.display = 'none';
-    });
+            var selectedTab = document.getElementById(tabId);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
 
-    var contentId = 'content' + buttonId.slice(-1);
-    document.getElementById(contentId).style.display = 'block';
-  }
-  </script>
+            // Hide both design contents initially
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+        }
+        showTab('content-tab1');
+        function showContent(contentId) {
+            // Hide both design contents initially
+            document.getElementById('content1').style.display = 'none';
+            document.getElementById('content2').style.display = 'none';
+
+            // Show the selected design content
+            var selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+            }
+        }
+        showContent('content1');
+    </script>
+</body>
 </html>
